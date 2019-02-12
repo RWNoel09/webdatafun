@@ -8,19 +8,19 @@ h1 {
   text-shadow: 2px 2px #ff0000;
   font-size: 225%;} 
 
-.header {}
+div.header {}
 
-.day-box PREP {
+div.day-box.PREP {
   border-width: 2px;
   border-style: solid;
   border-color: #0088dd;}
 
-.day-box CURRENT {
+div.day-box.CURRENT {
   border-width: 2px;
   border-style: solid;
   border-color: #0088dd;}
 
-.day-box COMPLETED {
+div.day-box.COMPLETED {
   border-width: 2px;
   border-style: solid;
   border-color: #0088dd;}

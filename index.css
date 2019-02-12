@@ -15,6 +15,8 @@ div.day-box.PREP {
   border-style: solid;
   border-color: #0088dd;
   padding: 20px}
+div.day {
+  font-size: 200%}
 
 div.day-box.CURRENT {
   border-width: 2px;
@@ -27,4 +29,5 @@ div.day-box.COMPLETED {
   border-style: solid;
   border-color: #0088dd;
   padding: 20px}
+
 

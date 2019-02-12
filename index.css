@@ -8,7 +8,15 @@ h1 {
   text-shadow: 2px 2px #ff0000;
   font-size: 225%;} 
 
-.header {}
+div.header {}
+
+div.nav {
+  color: #17202A;
+  font-family: Georgia, Times, san-serif;
+  text-align: center;
+  text-shadow: 2px 2px #ff0000;
+  font-size: 225%;
+  font-weight: bold;}
 
 div.day-box.PREP {
   border-width: 2px;

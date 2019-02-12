@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Definitely Not Bandersnatch: Choose Your Own Adventure!</title>
+  </head>
+  <body>
+    <h1>Definitely Not Bandersnatch!</h1>
+    <h2>A Choose Your Own Adventure...</h2>
+    <p>Would you like to play?</p>
+    <button id = "firstbutton">Yes!</button>
+    <br>
+
+    <p id = "question">Frosted Flakes or Froot Loops?</p>
+    <br>
+    <img id = "frostedpic" src="frostedpic.jpg" alt="Frosted Flakes" width="409" height="293" />
+    <img id = "frootpic" src="frootpic.jpg" alt="Froot Loops" width="409" height="293" />
+    <br>
+    <button id="frostedbutton">Frosted Flakes!</button>
+    <button id="frootbutton">Froot Loops!</button>
+    <br>
+    <img id = "frostedpicture" src="frostedpic.jpg" alt="Frosted Flakes" width="409" height="293" />
+    <img id = "frootpicture" src="frootpic.jpg" alt="Froot Loops" width="409" height="293">
+    <br>
+    <p id = "chosefrostedtext">You chose Frosted Flakes.</p>
+    <p id = "chosefroottext">You chose Froot Loops.</p>
+    <br>
+
+    <p id = "question2">What song would you like to listen to?</p>
+    <br>
+    <img id = "bambapic" src="mobambapic.jpg" alt="Mo Bamba" width="409" height="293">
+    <img id = "elsepic" src="badmusicpic.jpg" alt="MY EARS!" width="409" height="293">
+    <br>
+    <button id="bambabutton">Mo Bamba</button>
+    <button id="elsebutton">Literally Anything Else</button>
+    <br>
+    <img id = "bambapicture" src="mobambapic.jpg" alt="MO BAMBA!" width="409" height="293">
+    <img id = "elsepicture" src="badmusicpic.jpg" alt="ANYTHING ELSE!" width="409" height="293">
+    <br>
+    <p id = "bambatext">You chose Mo Bamba.</p>
+    <p id = "elsetext">You chose Literally Anything Else.</p>
+    <br>
+
+    <p id = "question3">Final question. Would you like to work alone on your great project, or with a team?</p>
+    <br>
+    <img id = "alonepic" src="alonepic.jpg" alt="Alone" width="409" height="293">
+    <img id = "togetherpic" src="teampic.jpg" alt="With a team" width="409" height="293">
+    <br>
+    <button id="alonebutton">Alone</button>
+    <button id="togetherbutton">With a team</button>
+    <br>
+    <img id = "alonepicture" src="alonepic.jpg" alt="Alone" width="409" height="293">
+    <img id = "togetherpicture" src="teampic.jpg" alt="With a team" width="409" height="293">
+    <br>
+    <p id = "alonetext">You chose to work alone. In the game that is the correct decision, but in the real world it's definitely not!</p>
+    <p id = "togethertext">You chose to work with a team. In the game that is the wrong decision, but in the real world it's definitely not!</p>
+
+    <script type="text/javascript">
+      document.getElementById("question").style.display = "none";
+      document.getElementById("frostedpic").style.display = "none";
+      document.getElementById("frootpic").style.display = "none";
+      document.getElementById("frostedbutton").style.display = "none";
+      document.getElementById("frootbutton").style.display = "none";
+      document.getElementById("frostedpicture").style.display = "none";
+      document.getElementById("frootpicture").style.display = "none";
+      document.getElementById("chosefrostedtext").style.display = "none";
+      document.getElementById("chosefroottext").style.display = "none";
+
+      document.getElementById("question2").style.display = "none";
+      document.getElementById("bambapic").style.display = "none";
+      document.getElementById("elsepic").style.display = "none";
+      document.getElementById("bambabutton").style.display = "none";
+      document.getElementById("elsebutton").style.display = "none";
+      document.getElementById("bambapicture").style.display = "none";
+      document.getElementById("elsepicture").style.display = "none";
+      document.getElementById("bambatext").style.display = "none";
+      document.getElementById("elsetext").style.display = "none";
+
+      document.getElementById("question3").style.display = "none";
+      document.getElementById("alonepic").style.display = "none";
+      document.getElementById("togetherpic").style.display = "none";
+      document.getElementById("alonebutton").style.display = "none";
+      document.getElementById("togetherbutton").style.display = "none";
+      document.getElementById("alonepicture").style.display = "none";
+      document.getElementById("togetherpicture").style.display = "none";
+      document.getElementById("alonetext").style.display = "none";
+      document.getElementById("togethertext").style.display = "none";
+
+      function initialFunction(picture1,picture2,question,button1,button2) {
+        document.getElementById(picture1).style.display = "inline";
+        document.getElementById(picture2).style.display = "inline";
+        document.getElementById(question).style.display = "inline";
+        document.getElementById(button1).style.display = "inline";
+        document.getElementById(button2).style.display = "inline";
+      }
+      function showFunction(resultpicture,choicetext,question,picture1,picture2,button1,button2) {
+        document.getElementById(resultpicture).style.display = "inline";
+        document.getElementById(choicetext).style.display = "inline";
+        document.getElementById(question).style.display = "inline";
+        document.getElementById(picture1).style.display = "inline";
+        document.getElementById(picture2).style.display = "inline";
+        document.getElementById(button1).style.display = "inline";
+        document.getElementById(button2).style.display = "inline";
+      }
+      function lastFunction(resultpicture,resulttext) {
+        document.getElementById(resultpicture).style.display = "inline";
+        document.getElementById(resulttext).style.display = "inline";
+      }
+
+      document.getElementById("firstbutton").addEventListener("click", function(){initialFunction('frostedpic','frootpic','question','frostedbutton','frootbutton')});
+      document.getElementById("frostedbutton").addEventListener("click", function(){showFunction('frostedpicture','chosefrostedtext','question2','bambapic','elsepic','bambabutton','elsebutton')});
+      document.getElementById("frootbutton").addEventListener("click", function(){showFunction('frootpicture','chosefroottext','question2','bambapic','elsepic','bambabutton','elsebutton')});
+      document.getElementById("bambabutton").addEventListener("click", function(){showFunction('bambapicture','bambatext','question3','alonepic','togetherpic','alonebutton','togetherbutton')});
+      document.getElementById("elsebutton").addEventListener("click", function(){showFunction('elsepicture','elsetext','question3','alonepic','togetherpic','alonebutton','togetherbutton')});
+      document.getElementById("alonebutton").addEventListener("click", function(){lastFunction('alonepicture','alonetext')});
+      document.getElementById("togetherbutton").addEventListener("click", function(){lastFunction('togetherpicture','togethertext')});
+
+    </script>
+  </body>
+</html>

@@ -1,2 +1,16 @@
-body { 
+body {
   background-color: yellow;}
+
+h1 {
+  color: #17202A;
+  font-family: Georgia, Times, san-serif;
+  text-align: center;
+  text-shadow: 2px 2px #ff0000;
+  font-size: 225%;} 
+
+div.header {}
+
+div.day-box CURRENT {}
+
+div.day-box COMPLETED {}
+

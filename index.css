@@ -10,7 +10,18 @@ h1 {
 
 div.header {}
 
-div.day-box CURRENT {}
+div.day-box PREP {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #0088dd;}
 
-div.day-box COMPLETED {}
+div.day-box CURRENT {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #0088dd;}
+
+div.day-box COMPLETED {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #0088dd;}
 

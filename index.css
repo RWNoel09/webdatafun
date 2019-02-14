@@ -1,5 +1,10 @@
+@font-face {
+  font-family: "TequilaSunset";
+  src: url('https://www.urbanfonts.com/fonts/Tequila_Sunset.font');}
+
 body {
-  background-color: yellow;}
+  background-color: yellow;
+  font-family: TequilaSunset, Arial, serif;}
 
 h1 {
   color: #17202A;
